@@ -12,7 +12,9 @@ import com.ok7apps.farmdropexample.R
 class DefaultImageLoaderProxy(private val requestManager: RequestManager) : ImageLoaderProxy {
 
     companion object {
+
         const val AVATAR_DIMENS_PX = 120
+
     }
 
     private val options by lazy {
