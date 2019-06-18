@@ -1,2 +1,2 @@
-# mvp_sample_with_pagination
+# MVP sample app with RxJava, Kotlin, Retrofit and Room
 MVP RxJava sample
