@@ -29,6 +29,7 @@ abstract class AbstractSimplePaginator<T>(
                 .compose(paginationTransformer())
                 .take(2)
                 .subscribeOn(schedulerProvider.io())
+                .observeOn(schedulerProvider.io())
                 .subscribe(state::onNext)
                 .addTo(compositeDisposable)
     }
@@ -38,6 +39,7 @@ abstract class AbstractSimplePaginator<T>(
                 .compose(paginationTransformer())
                 .take(2)
                 .subscribeOn(schedulerProvider.io())
+                .observeOn(schedulerProvider.io())
                 .subscribe(state::onNext)
                 .addTo(compositeDisposable)
 
