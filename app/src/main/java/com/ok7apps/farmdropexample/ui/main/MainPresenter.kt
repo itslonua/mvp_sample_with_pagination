@@ -14,7 +14,8 @@ class MainPresenter(
 
     private var forceReload = AtomicBoolean(false)
 
-    init {
+    override fun onFirstViewAttach() {
+        super.onFirstViewAttach()
         subscribeToPagination()
     }
 
